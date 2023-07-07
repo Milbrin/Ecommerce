@@ -17,4 +17,10 @@
         <li>Your template at <code><a href="{{ '/var/www/html/Ecommerce/templates/home/index.html.twig'|file_link(0) }}">templates/home/index.html.twig</a></code></li>
     </ul>
 </div>
+
+<ul>
+    {% for product in products %}
+    <li>{{ product.name }}</li>
+    {% endfor %}
+</ul>
 {% endblock %}
