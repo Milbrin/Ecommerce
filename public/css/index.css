@@ -1,3 +1,21 @@
+* {
+    box-sizing:border-box; /* On spécifie que la largeur (width) de chaque boîte comprend le padding et la bordure (par défaut, c'est seulement la largeur du contenu) */
+}
+
+html {
+    font-size: 62.5%; /* 1rem = 10px (la formule est 10/16*100) la taille par défaut étant 16px */
+    height: 100%;
+}
+
+body {
+    font-size: 1.6rem; /* on remets la taille du texte par défaut pour le body à 18px en utilisant les rem comme unité) */
+    margin: 0;
+    padding: 0;
+    height: auto;
+    line-height: 1.5;
+  
+} 
+
 .navbar-container {
     background-color: rgb(108, 76, 76);
     display: flex;
@@ -14,10 +32,9 @@
     justify-content: space-between;
 }
 
-.title {
+.title, .cart, .cart-total {
     color: white;
 }
-
 
 .products {
     display: flex;
@@ -38,25 +55,24 @@
 }
 
 .product {
-    width: 300px;
-    height: 300px;
+    width: 30rem;
     border: 1px solid rgb(228, 228, 228);
-    margin: 30px;
-    padding: 10px;
+    margin: 3rem;
+    padding: 1rem;
 }
 
 .product-image {
-    width: 150px;
-    height: 150px;
+    width: 15rem;
+    height: 15rem;
 }
 
 .product-price {
-    font-size: 20px;
+    font-size: 2rem;
     color:rgb(71, 71, 71);
 }
 
 .product-stock {
-    font-size: 20px;
+    font-size: 2rem;
     font-family: Arial, Helvetica, sans-serif;
     font-style: italic;
 }
@@ -65,12 +81,12 @@
     background-color: rgb(62, 182, 182);
     color: white;
     border: none;
-    padding: 5px;
+    padding: 0.5rem;
 }
 
 .product-name {
     color: rgb(71, 71, 71);
-    font-size: 24px;
+    font-size: 2.4rem;
 }
 
 .product-description {

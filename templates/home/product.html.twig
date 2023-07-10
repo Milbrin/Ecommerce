@@ -4,7 +4,10 @@
         <div class="product-meta">
             <span class="product-price">{{(product.price / 100)}} €</span>
             <span class="product-stock">Stock : {{product.stockQty}}</span>
-            <button class="button-add">Ajouter au panier</button>
+            <form method="POST">
+                <input type="hidden" name="product-id" value={{product.id}}>
+                <button class="button-add">Ajouter au panier</button>
+            </form>
         </div>
     </div>
     <span class="product-name">{{product.name}}</span>

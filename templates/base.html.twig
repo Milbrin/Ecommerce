@@ -12,7 +12,17 @@
         {% endblock %}
     </head>
     <body>
-        {% include 'navbar.html.twig' only %}
+        <div class="navbar-container">
+            <ul class="navbar" >
+                <li>
+                    <h1 class="title">SUPER KAWA</h1>
+                </li>
+                <li>
+                    <div class="cart">Panier</div>
+                    {% block carts %}{% endblock %}
+                </li>
+            <ul>
+        </div>
         {% block body %}{% endblock %}
     </body>
 </html>
