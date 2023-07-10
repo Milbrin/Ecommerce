@@ -31,6 +31,7 @@ class HomeController extends AbstractController
         if(!$cart) {
             $cart = new Cart();
             $cart->setUser($user);
+            $cart->setTotal(0);
             $cart->setCreatedAt(new DateTimeImmutable());
             $cart->setUpdatedAt(new DateTimeImmutable());
         }
