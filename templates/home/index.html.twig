@@ -18,9 +18,9 @@
     </ul>
 </div>
 
-<ul>
+<ul class="products">
     {% for product in products %}
-    <li>{{ product.name }}</li>
+        <li>{% include 'home/product.html.twig' with {'product' : product} %}</li>
     {% endfor %}
 </ul>
 {% endblock %}
